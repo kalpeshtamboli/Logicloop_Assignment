@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backgroundImg {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background: linear-gradient(
+      0deg,
+      rgba(222, 212, 212, 0.86),
+      rgba(222, 211, 211, 0.86)
+    ),
+    url("./assets/annie-spratt-W0pMGlPogow-unsplash.jpg");
+}
+
+
+
+
+
+.backgroundImage {
+  background-image: url("./assets/Untitled-11 2.png");
+}
+
+.bgColor {
+  background: rgba(103, 103, 200, 0.15);
+}
+
+.slider {
+  margin: 0 20px;
+  padding: 2rem 0;
+}
+
+/* .slider img {
+} */
+
+.bgColorr {
+  background: linear-gradient(84.42deg, #000000 -67.71%, #292967 60.53%);
+}
+
+.multiCarasuolBgImg {
+  /* background-image: url("./assets/school.png"); */
+
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background: linear-gradient(
+      0deg,
+      rgba(222, 212, 212, 0.86),
+      rgba(222, 211, 211, 0.86)
+    ),
+    url("./assets/annie-spratt-W0pMGlPogow-unsplash.jpg");
+}
