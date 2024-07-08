@@ -8,10 +8,10 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="font-santoshi">
       {/* <Navbar /> */}
       <Landing />
-    </>
+    </div>
   );
 }
 

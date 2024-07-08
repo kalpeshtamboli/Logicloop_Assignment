@@ -9,6 +9,9 @@ export default {
       colors: {
         'custom-yellow': '#FFF9DA',
       },
+      fontFamily : {
+        santoshi : ["santoshi", "sans-serif"]
+      }
     },
   },
   plugins: [],

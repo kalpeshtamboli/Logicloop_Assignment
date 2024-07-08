@@ -4,8 +4,8 @@ import Button from "./Button";
 import GoogleMap from "./GoogleMap/GoogleMap";
 const Footer = () => {
   return (
-    <footer className="bgColorr w-full  h-[66vh] md:h-[60vh] mt-14">
-      <section className="flex flex-col md:flex-row items-center justify-between mx-32 pt-16">
+    <footer className="bgColorr w-full  h-[66vh] md:h-[60vh]">
+      <section className="flex flex-col space-y-5 md:flex-row items-center justify-between mx-32 pt-16">
         <div className="">
           <h4 className="uppercase text-white">dahisar</h4>
           <h1 className="uppercase text-2xl text-[#FDDF49]">
@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
         <GoogleMap />
       </section>
-      <div className="bg-black text-white h-16 mt-12 flex justify-center items-center text-sm ">
+      <div className="bg-black text-white h-16 mt-0 md:mt-16 flex justify-center items-center text-sm ">
         Copyright © 2024 Universal Academy. All rights reserved
       </div>
     </footer>

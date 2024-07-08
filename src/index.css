@@ -13,10 +13,6 @@
     url("./assets/annie-spratt-W0pMGlPogow-unsplash.jpg");
 }
 
-
-
-
-
 .backgroundImage {
   background-image: url("./assets/Untitled-11 2.png");
 }
@@ -44,8 +40,8 @@
   background-repeat: no-repeat !important;
   background: linear-gradient(
       0deg,
-      rgba(222, 212, 212, 0.86),
-      rgba(222, 211, 211, 0.86)
+      rgba(25, 72, 182, 0.86),
+      rgba(128, 68, 231, 0.86)
     ),
     url("./assets/annie-spratt-W0pMGlPogow-unsplash.jpg");
 }

@@ -2,7 +2,6 @@ import React from "react";
 import landingPic from "../assets/smiling_indian_student_with_glasses_and_backpack_standing_alone_on.png";
 import schoolLogo from "../assets/pace-logo-png-1.svg";
 import Button from "../Components/Button";
-import Inputbox from "../Components/Inputbox";
 import img1 from "../assets/1.svg";
 import img2 from "../assets/2.svg";
 import img3 from "../assets/3.svg";
@@ -18,16 +17,11 @@ import asset1 from "../assets/asset1.png";
 import asset2 from "../assets/asset2.png";
 import asset3 from "../assets/asset3.png";
 import asset4 from "../assets/assets4.png";
-import asset5 from "../assets/assets5.png";
-import asset6 from "../assets/asset6.png";
-import asset7 from "../assets/asset7.png";
-import asset8 from "../assets/asset8.png";
-import asset9 from "../assets/asset9.png";
-import asset10 from "../assets/asset10.png";
 
 import Footer from "../Components/Footer";
 import CarouselCompo from "../Components/Carousel";
 import MasonryCompo from "../Components/Mansoury";
+import Form from "../Components/Form";
 
 const multiCarasuolImages = [
   asset1,
@@ -118,7 +112,7 @@ const Landing = () => {
     FourthTopperStud,
   ];
   return (
-    <div className="pb-20 backgroundImg relative h-[115vh] bg-cover bg-no-repeat bg-center mb-20">
+    <div className="pb-20 backgroundImg relative h-[120vh] bg-cover bg-no-repeat bg-center mb-20">
       <header className="flex flex-col lg:flex-row items-center px-2 md:px-20 pt-10  ">
         <div>
           <p className=" text-[24px] uppercase text-center md:text-left font-semibold text-black">
@@ -161,97 +155,16 @@ const Landing = () => {
         <img
           src={landingPic}
           alt="smiling_girl"
-          className="w-[20rem] md:w-[27rem] pt-5 md:pt-40"
+          className="w-[20rem] md:w-[27rem] pt-5 md:pt-64"
         />
 
-        <div className="rounded-full text-sm px-2 md:px-0 w-96 md:-mt-4 ">
-          <form className=" pb-5 bg-gray-100 rounded-md  mb-5">
-            <div className="h-14 rounded-t-2xl text-lg uppercase font-bold text-[#191970] flex items-center justify-center bg-[#FDDF49]">
-              {" "}
-              enquire now!{" "}
-            </div>
-
-            <div className="flex items-center     space-x-3 ml-5 md:ml-7 space-y-4">
-              <p className="pt-3">Academic Year</p>
-              <div className="px-5 md:px-7 text-white w-60  text-center  py-3 rounded-md bg-[#191970]">
-                2024-2026
-              </div>
-            </div>
-
-            <div className="flex space-y-4 items-center ml-5 md:ml-7">
-              <p className="mt-4">
-                Your Relationship <br /> with the Child
-              </p>
-              <div className="px-7 ml-4 text-white py-2 rounded-md bg-[#191970]">
-                Father
-              </div>
-              <div className="px-9  py-2 rounded-md border-t-2 border-b-2 border-r-2">
-                Mother
-              </div>
-            </div>
-
-            <div className="flex space-x-2 md:space-x-0 mt-5 mx-5">
-              <Inputbox
-                type="text"
-                label={"Child's First Name"}
-                placeholder="Type Here"
-                classes="border-2 py-2.5 rounded-md pl-2"
-              />
-              <Inputbox
-                type="text"
-                label={"Child's Last Name"}
-                placeholder="Type Here"
-                classes="border-2 py-2.5 rounded-md pl-2"
-              />
-            </div>
-
-            <div className="flex space-x-2 md:space-x-0  mt-5 mx-5">
-              <Inputbox
-                type="text"
-                label={"Your First Name"}
-                placeholder="Type Here"
-                classes="border-2 py-2.5 rounded-md pl-2"
-              />
-              <Inputbox
-                type="text"
-                label={"Your Last Name"}
-                placeholder="Type Here"
-                classes="border-2 py-2.5 rounded-md pl-2"
-              />
-            </div>
-
-            <div className="mt-5 mx-5">
-              <Inputbox
-                type="text"
-                label={"Mobile Number"}
-                placeholder="+91 | Enter your Mobile Number"
-                classes="border-2 py-2.5 rounded-md pl-4 w-full"
-              />
-            </div>
-
-            <div className="mt-5 mx-5">
-              <Inputbox
-                type="email"
-                label={"Email Address"}
-                placeholder="yourname@example.com"
-                classes="border-2 py-2.5 rounded-md pl-4 w-full "
-              />
-            </div>
-
-            <div className="flex justify-center items-center mt-5">
-              <Button
-                classes={"px-6 py-2 bg-[#292967] text-white rounded-full"}
-                label={"Enquire Now"}
-              />
-            </div>
-
-            {/* <Dropdown label="Course Applying For" optionValues={["BCA","BBA","MCA"]} placeholder="choose course" /> */}
-          </form>
+        <div className="rounded-md text-sm px-2 md:px-0 w-96 md:-mt-4 ">
+          <Form />
         </div>
       </header>
 
       {/* learning approach */}
-      <section className="bg-[#292967] text-white py-5 mx-3 md:mx-[90px] relative  rounded-3xl  w-auto ">
+      <section className="bg-[#292967] text-white py-5 mx-3 md:mx-[90px] relative  rounded-3xl mt-10  w-auto ">
         <h1 className="text-center uppercase font-semibold">Our</h1>
         <h1 className="text-center text-[#FDDF49] pb-8 uppercase text-2xl font-semibold">
           Learning Approach
@@ -354,15 +267,7 @@ const Landing = () => {
                 </div>
               </div>
 
-              {/* <div className=" flex justify-center items-center mt-10 mb-5">
-          <Button
-            classes={
-              "pl-4 pr-10 py-2 bg-[#FDDF49] text-[#292967] font-semibold rounded-full"
-            }
-            label={"Enquire Now"}
-          />
-        
-        </div> */}
+            
             </div>
           </div>
         </section>
@@ -593,67 +498,75 @@ const Landing = () => {
 
       {/* multi image carasuol */}
 
-      <div className=" bg-no-repeat bg-center bg-cover">
-        <div className="flex justify-around">
-          <p>Success</p>
+      <div className="mt-20">
+        <div className="multiCarasuolBgImg h-[35vh] relative">
+          {/* <img src={multiCarasuolBgImg} alt={"multiCarasuolBgImg"} className="multiCarasuolBgImg h-[50vh] w-full bg-cover object-cover " /> */}
+        </div>
+        <div className=" relative bottom-60 md:bottom-40 ">
+          <div className=" flex justify-around items-center ">
+            <div>
+              <p>Success</p>
+              <h1 className="text-[#FDDF49] text-lg">CAMPUSES</h1>
+            </div>
 
-          <div className="flex">
-            <Button
-              classes={
-                "pl-2 pr-12 py-2 bg-[#292967] text-white    font-semibold rounded-full"
-              }
-              label={"Enquire Now"}
-            />
-            <div className="bg-[#FDDF49] h-7  w-7 relative top-2 right-8 rounded-full">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6 mx-auto pt-1"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
-              </svg>
+            <div className="flex ">
+              <Button
+                classes={
+                  "pl-2 pr-12 py-2 bg-[#292967] text-white    font-semibold rounded-full"
+                }
+                label={"Enquire Now"}
+              />
+              <div className="bg-[#FDDF49] h-7  w-7 relative top-2 right-8 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 mx-auto pt-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-        </div>
 
-        <CarouselCompo
-          autoPlay={true}
-          autoPlaySpeed={4000}
-          swipeable={true}
-          responsive={{
-            desktop: {
-              breakpoint: { max: 3000, min: 1024 },
-              items: 1,
-              slidesToSlide: 1, // optional, default to 1.
-            },
-            tablet: {
-              breakpoint: { max: 1024, min: 768 },
-              items: 3,
-              slidesToSlide: 2, // optional, default to 1.
-            },
-            mobile: {
-              breakpoint: { max: 767, min: 464 },
-              items: 2,
-              slidesToSlide: 1, // optional, default to 1.
-            },
-          }}
-          arrows={true}
-          showDots={true}
-          infinite={true}
-        >
-         <div className="m-[10%]">
-         {[...new Array(1)]?.map((_, index) => {
-            return <MasonryCompo images={multiCarasuolImages} />;
-          })}
-         </div>
-        </CarouselCompo>
+          <CarouselCompo
+            autoPlay={true}
+            autoPlaySpeed={4000}
+            swipeable={true}
+            responsive={{
+              desktop: {
+                breakpoint: { max: 3000, min: 1024 },
+                items: 1,
+                slidesToSlide: 1, // optional, default to 1.
+              },
+              tablet: {
+                breakpoint: { max: 1024, min: 768 },
+                items: 3,
+                slidesToSlide: 2, // optional, default to 1.
+              },
+              mobile: {
+                breakpoint: { max: 767, min: 464 },
+                items: 2,
+                slidesToSlide: 1, // optional, default to 1.
+              },
+            }}
+            arrows={true}
+            showDots={true}
+            infinite={true}
+          >
+            <div className="mx-5 md:mx-[10%] mt-16">
+              {[...new Array(1)]?.map((_, index) => {
+                return <MasonryCompo images={multiCarasuolImages} />;
+              })}
+            </div>
+          </CarouselCompo>
+        </div>
       </div>
 
       <Footer />
